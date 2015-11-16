@@ -188,7 +188,9 @@ section {
 
 
 #equipe {
-	background-color: #fff;
+	/*background-color: #fff;*/
+  background-color: #111;
+  color:#EEE;
 }
 
 #lieux {
@@ -381,7 +383,9 @@ figure.formateur {
   text-align: left;
   color: #000000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
+
+/*  border-radius: 80%;
+*/}
 figure.formateur * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -391,6 +395,7 @@ figure.formateur * {
 figure.formateur img {
   vertical-align: top;
   max-width: 100%;
+
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
