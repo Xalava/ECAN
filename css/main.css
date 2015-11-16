@@ -1,6 +1,13 @@
-
-  @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 @import url(http://fonts.googleapis.com/css?family=Bitter:400);
+/*Couleurs 
+gris légers 444
+rouge danger f44d3c
+
+gris navbar 2b2b2b
+*/
+
+
 
 html,body {
 	height:100%;
@@ -154,6 +161,15 @@ section {
 	background-color: #EEE;
 }
 
+.presentation {
+  border-width: 3px;
+/*  border-style: solid;
+*/  
+/* background-color: rgba(2,2,2,0.7);*/
+
+}
+
+
 #contenu {
   background-color: rgba(0,0,0,0.7);
 
@@ -209,8 +225,147 @@ footer .nav>li>a:hover {
 }
 
 
+/*figures presentation*/
 
-
+figure.prez {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  width: 100%;
+  background: #000000;
+  text-align: left;
+  color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.prez * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.prez img {
+  vertical-align: top;
+  max-width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+figure.prez figcaption {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  bottom: 18px;
+  right: 18px;
+  display: block;
+  padding: 75px 20px 20px;
+}
+figure.prez figcaption::before {
+  position: absolute;
+  min-width: 1px;
+  min-height: 1px;
+  top: 0%;
+  left: 0%;
+  bottom: 100%;
+  right: 100%;
+  content: '';
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+figure.prez h3,
+figure.prez p {
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.prez h3 {
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  font-weight: 400;
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+}
+figure.prez h3 span {
+  font-weight: 800;
+}
+figure.prez p {
+  text-align: left;
+  margin: 0;
+}
+figure.prez i {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 34px;
+  color: #000000;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+figure.prez a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+figure.prez.blue {
+  background-color: #2472a4;
+  color: #164666;
+}
+figure.prez.blue i {
+  color: #20638f;
+}
+figure.prez.red {
+  background-color: #ab3326;
+  color: #6d2018;
+/*  background-color: #f44d3c;
+  color: #bd3028;*/
+}
+figure.prez.red i {
+  color: #962d22;
+}
+figure.prez.yellow {
+  background-color: #e08e0b;
+  color: #976008;
+}
+figure.prez.yellow i {
+  color: #c87f0a;
+}
+figure.prez:hover img,
+figure.prez.hover img {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+figure.prez:hover figcaption:before,
+figure.prez.hover figcaption:before {
+  right: 0%;
+  bottom: 0%;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.prez:hover h3,
+figure.prez.hover h3,
+figure.prez:hover p,
+figure.prez.hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+figure.prez:hover i,
+figure.prez.hover i {
+  background: rgba(255, 255, 255, 0.8);
+}
 /*Equipe*/
 
 figure.formateur {
@@ -254,8 +409,8 @@ figure.formateur figcaption::before {
   min-height: 1px;
   top: 0%;
   left: 0%;
-  bottom: 90%;
-  right: 90%;
+  bottom: 100%;
+  right: 100%;
   content: '';
   display: block;
   background: rgba(255, 255, 255, 0.7);
