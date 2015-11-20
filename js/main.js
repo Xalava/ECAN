@@ -73,7 +73,7 @@ $('a[href*=#]:not([href=#])').click(function() {
   $(document).ready(function(){
 
     // hide .navbar first
-    $(".navbar").hide();
+    // $(".navbar").hide();
 
     // fade in .navbar
     $(function () {
@@ -81,7 +81,12 @@ $('a[href*=#]:not([href=#])').click(function() {
 
                  // set distance user needs to scroll before we start fadeIn
             if ($(this).scrollTop() > 100) {
-                $('.navbar').fadeIn();
+                $('.navbar').fadeIn({queue: false});
+                                // $('.navbar-brand').fadeOut();
+
+                // $(".navbar-brand").animate({right: "+=400px"},1200);
+                // $(".navbar-brand").animate({right: "-=490px"},4500,"swing");
+
             } else {
                 $('.navbar').fadeOut();
             }
