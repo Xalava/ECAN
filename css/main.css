@@ -23,6 +23,10 @@ html,body {
     }
 }
 
+h1 {
+  margin-bottom: 0.5em;
+}
+
 a {
     color:#999;
 }
@@ -550,3 +554,43 @@ figure.formateur.hover i {
   margin-right: 1em;
 }
 
+
+
+
+
+figure.lieux{
+  overflow: hidden;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+figure.lieux figcaption{
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+figure.lieux .descrilieux {
+  position: absolute;
+  top: 16px;
+  left: 22px;
+  bottom: 56px;
+  right: 22px;
+  padding: 25px 20px 20px;
+  opacity: 0;
+}
+
+.lieux .descrilieux::before {
+
+}
+
+
+.lieux .descrilieux:hover {
+  display: block;
+  opacity: 1;
+  color:white;
+  background-color: rgba(9,9,9,0.8);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+}
