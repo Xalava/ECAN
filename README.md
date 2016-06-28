@@ -5,12 +5,13 @@
 
 ### Technologies
 
-- FontAwesome 
-- Google Fonts (Lato and Bitter) 
-- Bootstrap
-- normalize.css
+Animate.css
+FontAwesome 
+Google Fonts (Lato and Bitter) 
+Bootstrap
+normalize.css
 
-###  Images 
+###images 
 
 Machine : Quentin Chevrier - Museomix (CC by sa)
 Hello Printer: Mika (CC BY-SA 2.0)
