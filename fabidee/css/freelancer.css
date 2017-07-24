@@ -20,6 +20,8 @@ a:active,
 a.active {
   color: #2C3E50;
 }
+
+
 h1,
 h2,
 h3,
@@ -306,6 +308,12 @@ form .row:first-child .floating-label-form-group {
 footer {
   color: white;
 }
+footer a,
+footer a:hover{
+  color:white; 
+  text-decoration: none;
+}
+
 footer h3 {
   margin-bottom: 30px;
 }
