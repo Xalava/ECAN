@@ -246,9 +246,7 @@ jQuery(document).ready(function($) {
 
   $.getJSON(api, function(data) {
 
-    // console.log(data);
     var values = data.values;
-    console.log(values);
 
     var html_content = "";
     var imgId = 0;
